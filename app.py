@@ -37,7 +37,7 @@ with st.sidebar:
 
 with tab1:
     st.write("""ContentX:violet[.]ai is an AI-powered content creation tool that can help you level up your YouTube channel.\n\nWith :violet[ContentX.ai], you can generate high-quality content in minutes, including titles, descriptions and scripts.Whether you\'re a beginner or a seasoned YouTuber, ContentX.ai can help you take your channel to the next level.""")
-    img=Image.open("C:\\Users\\Varun Sai Kanuri\\Downloads\\cont2.jpg")
+    img=Image.open("src/images/cont2.jpg")
     st.image(img,use_column_width=True,width=400)
     st.write('If you\'re looking for a way to create engaging and informative YouTube videos quickly and easily, then ContentX.ai is the perfect tool for you. :violet[Sign up] for a free trial today and see how ContentX:violet[.]ai can help you grow your channel.')
     
