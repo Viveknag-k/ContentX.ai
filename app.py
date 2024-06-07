@@ -3,13 +3,14 @@ import os
 
 from PIL import Image
 from langchain.chains import LLMChain
-from langchain.utilities import WikipediaAPIWrapper 
+#from langchain.utilities import WikipediaAPIWrapper 
 from langchain.prompts import PromptTemplate
 
 
 from langchain_google_genai import ChatGoogleGenerativeAI
-
-
+from langchain_community.tools import WikipediaQueryRun
+from langchain_community.utilities import WikipediaAPIWrapper
+wiki = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
 img=Image.open("src/images/Page_Icon.png")
 
 st.set_page_config(page_title="ContentX.ai: Generate content with Gemini",page_icon=img)
@@ -90,7 +91,7 @@ with tab2:
         hashtags_chain = LLMChain(llm=llm, prompt=hashtags_template, verbose=True, output_key='hashtags')
         thumbnail_chain = LLMChain(llm=llm, prompt=thumbnail_tempalte, verbose=True, output_key='thumbnail')
 
-        wiki = WikipediaAPIWrapper()
+        
     
     if prompt := st.text_input("Enter a prompt here "):
             if not google_api_key:
