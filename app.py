@@ -33,7 +33,7 @@ with st.sidebar:
     st.markdown("---")
     img1=Image.open("src/images/s1.png")
     st.image(img1,use_column_width=True,width=400)
-    st.link_button("🔗 Source Code", "https://github.com/SSK-14/WizSearch", use_container_width=True)
+    st.link_button("🔗 Source Code", "https://github.com/Viveknag-k/ContentX.ai", use_container_width=True)
 
 
 with tab1:
