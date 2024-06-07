@@ -124,7 +124,7 @@ with tab3:
     
     st.write("\n\n\n")
     col1,col2=st.columns(2)
-    img2=Image.open("src/images/st6.png")
+    img2=Image.open("src/images/st6.jpg")
     with col1:
         st.write("At ContentX.ai, we understand the challenges of producing high-quality content consistently. That's why we've harnessed advanced algorithms and crafted a user-friendly interface to simplify the creative process, save time, and maximize productivity. Whether you're a seasoned creator or a newcomer to the platform, our tool is designed to help you craft professional-quality content with ease.",use_column_width=True)
     with col2:
