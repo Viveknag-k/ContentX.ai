@@ -10,7 +10,7 @@ from langchain.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 
-img=Image.open("C:\\Users\\Varun Sai Kanuri\\OneDrive\\Documents\\Create.ai\\Page_Icon.png")
+img=Image.open("src/images/Page_Icon.png")
 
 st.set_page_config(page_title="ContentX.ai: Generate content with Gemini",page_icon=img)
 st.title('ContentX:violet[.]ai')
@@ -30,7 +30,7 @@ with st.sidebar:
     st.markdown("""<span ><font size=2>Lets Connect!</font></span>""",unsafe_allow_html=True)
     "[Linkedin](https://www.linkedin.com/in/vivek-nag-kanuri-648901228/)" "  \n"  "[GitHub](https://github.com/Viveknag-k)" "\n[Tableau Public](https://public.tableau.com/app/profile/kanuri.vivek.nag/vizzes)"
     st.markdown("---")
-    img1=Image.open(r"C:\Users\Varun Sai Kanuri\OneDrive\Pictures\Screenshots\s1.png")
+    img1=Image.open("src/images/s1.png")
     st.image(img1,use_column_width=True,width=400)
     st.link_button("🔗 Source Code", "https://github.com/SSK-14/WizSearch", use_container_width=True)
 
@@ -124,7 +124,7 @@ with tab3:
     
     st.write("\n\n\n")
     col1,col2=st.columns(2)
-    img2=Image.open("C:\\Users\\Varun Sai Kanuri\\Downloads\\st6.jpg")
+    img2=Image.open("src/images/st6.png")
     with col1:
         st.write("At ContentX.ai, we understand the challenges of producing high-quality content consistently. That's why we've harnessed advanced algorithms and crafted a user-friendly interface to simplify the creative process, save time, and maximize productivity. Whether you're a seasoned creator or a newcomer to the platform, our tool is designed to help you craft professional-quality content with ease.",use_column_width=True)
     with col2:
@@ -135,7 +135,7 @@ with tab3:
     st.title("Transform Your Channel")
     st.write("\n\n\n")
     col3,col4=st.columns(2)
-    img3=Image.open("C:\\Users\\Varun Sai Kanuri\\Downloads\\st7.jpg")
+    img3=Image.open("src/images/st7.jpg")
     with col3:
         st.image(img3,use_column_width=True)
     with col4:
